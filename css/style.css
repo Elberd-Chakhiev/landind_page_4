@@ -791,8 +791,19 @@ video {
 }
 
 .li--menu::before {
-  content: var(--tw-content);
   position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  border-bottom-width: 2px;
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.group:hover .li--menu::before {
+  content: var(--tw-content);
+  width: 100%;
 }
 
 @media (max-width: 539px) {

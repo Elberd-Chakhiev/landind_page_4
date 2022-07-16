@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> document </title>
+    <script defer src="js/index.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="w-full h-screen bg-[url('/img/bg.png')] flex 
+    justify-center items-center relative">
+        <div class="container flex justify-between items-center">
+            <div class="block xl:hidden">
+                <div class="shadow-[0_15px_60px_15px_rgba(0,0,0,0.3)] shadow-cyan-500/50">
+                    <div class="border-8 border-white h-96 w-96">
+                        <div class=" w-full h-full
+                        shadow-[inset_0_15px_60px_15px_rgba(0,0,0,0.3)]
+                         shadow-cyan-500/50">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xl:mx-auto">
+                <div class="flex items-center w-full relative">
+                    <!--  -->
+                    <div id="main_menu" class=" md:fixed md:-translate-x-full md:top-0 md:left-0
+                     md:bg-rose-900 md:h-full md:p-4 
+                        md:z-20 transition-all">
+                        <ul class="flex justify-between text-white text-sm md:flex-col">
+                            <li class=" mr-4 hidden md:block md:self-end md:text-2xl cursor-pointer open-close">
+                                &times;
+                            </li>
+                            <li class="li--menu md:pb-4 font-bold mr-4">Наши клиенты</li>
+                            <li class="li--menu md:pb-4 font-bold mr-4">Список вакансий</li>
+                            <li class="li--menu md:pb-4 font-bold mr-4">О сотрудниках</li>
+                        </ul>
+                    </div>
+                    <div class="hidden z-10 md:block border open-close absolute left-0 top-0">
+                        menu
+                    </div>
+                    <div class="border absolute right-0 top-0">
+                        logo
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center justify-between mt-10 text-white ">
+                    <h1 class="uppercase text-4xl font-bold"> mose it or lose </h1>
+                    <p class="text-center max-w-[500px] mt-4 mb-8">
+                        Высокий уровень сервиса - оперативно реагируем на все процессы и быстро отвечаем заказчикам
+                    </p>
+
+
+                    <div class="shadow-[0_15px_60px_15px_rgba(0,0,0,0.3)] shadow-cyan-500/50 
+                    w-auto">
+                        <div class="uppercase text-white text-2xl 
+                            w-full h-full 
+                            shadow-[inset_0_15px_60px_15px_rgba(0,0,0,0.3)]
+                            shadow-cyan-500/50">
+                            <a href="#" class="border-8 inline-block
+                                border-white px-5 py-3"> join now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dots absolute opacity-20 rotate-180 pointer-events-none
+        top-2 left-0 max-w-[600px] xl:max-w-[60vw]">
+            <img src="./img/dots.png" alt="dots">
+        </div>
+        <div class="dots absolute opacity-20 pointer-events-none
+        bottom-2 right-0 max-w-[600px] xl:max-w-[60vw]">
+            <img src="./img/dots.png" alt="dots">
+        </div>
+
+    </header>
+
+</body>
+
+</html>

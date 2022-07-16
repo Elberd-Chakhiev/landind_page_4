@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./**/*.{js.html}', './index.html'],
   theme: {
-    extend: {},
+    extend: {  
+      colors: {
+        'main--theme' : '#191116',
+      },
+    },
     screens: {
       '3xl': {'max': '1919px'},
       '2xl': {'max': '1281px'},

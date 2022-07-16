@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title> document </title>
+    <title> HunTTeam </title>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script defer src="./js/index.js"></script>
@@ -16,16 +16,17 @@
 
 <body>
 
-    <header class="w-full h-screen flex 
-    justify-center items-center relative" style="background: url('./img/bg.png');">
+    <header class="pb-9 w-full  h-screen flex 
+    justify-center items-center relative bg-cover bg-no-repeat" style="background: url('./img/bg.webp');">
         <div class="container flex justify-between items-center">
             <div class="block xl:hidden">
                 <div class="shadow-[0_15px_60px_15px_rgba(0,0,0,0.3)] shadow-cyan-500/50">
                     <div class="border-8 border-white h-96 w-96">
                         <div class=" w-full h-full
                         shadow-[inset_0_15px_60px_15px_rgba(0,0,0,0.3)]
-                         shadow-cyan-500/50">
-
+                         shadow-cyan-500/50 flex justify-center items-center text-white
+                         text-4xl">
+                            HunTTeam
                         </div>
                     </div>
                 </div>
@@ -34,7 +35,7 @@
             <div class="xl:mx-auto ">
                 <div class="flex items-center w-full relative">
                     <div id="main_menu" class=" md:fixed md:-translate-x-full md:top-0 md:left-0
-                     md:bg-rose-900 md:h-full md:p-4 
+                     md:bg-main--theme md:h-full md:p-4 
                         md:z-20 transition-all">
                         <ul class="flex justify-between text-white text-sm md:flex-col">
                             <li class=" mr-4 hidden md:block md:self-end md:text-2xl cursor-pointer open-close">
@@ -48,9 +49,9 @@
                     <div class="hidden z-10 md:block border open-close absolute left-0 top-0">
                         menu
                     </div>
-                    <div class="border absolute right-0 top-0">
+                    <!-- <div class="border absolute right-0 top-0">
                         logo
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -86,6 +87,58 @@
         </div>
 
     </header>
+
+
+    <section class="relative py-56 z-10 bg-main--theme 
+    shadow-[0_15px_60px_15px_rgba(0,0,0,0.3)] shadow-cyan-500/50">
+        <div class="container relative overflow-hidden border-2 border-white
+        before:content-['']
+        before:absolute before:top-0 before:left-1/2 before--gradient--theme
+        before:w-80 before:h-80 before:rounded-full">
+
+            <h2 class="text--gragient-title--theme 
+            bg-gradient-to-r 
+            font-bold text-4xl from-rose-800 to-cyan-500">
+                <span>
+                    <</span>Отзывы> <span>
+                </span>
+            </h2>
+            <div class="feedback-slider relative pb-12 mt-14 text-white">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <p class="text-center text-cyan-500"> name fullname </p>
+                        <p class="text-center font-semibold text-rose-800"> job title </p>
+                        <p class="text-center my-4 max-w-[600px] mx-auto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ullam reiciendis.
+                            Temporibus expedita exercitationem necessitatibus consectetur libero, animi omnis, unde quam
+                            vel quia alias nisi accusamus! Explicabo quis cupiditate temporibus!
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="text-center text-cyan-500"> name fullname </p>
+                        <p class="text-center font-semibold text-rose-800"> job title </p>
+                        <p class="text-center my-4 max-w-[600px] mx-auto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ullam reiciendis.
+                            Temporibus expedita exercitationem necessitatibus consectetur libero, animi omnis, unde quam
+                            vel quia alias nisi accusamus! Explicabo quis cupiditate temporibus!
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-button-next after:text-cyan-500"></div>
+                <div class="swiper-button-prev after:text-cyan-500"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="mb-5 text-white opacity-20 text-end
+            font-bold text-4xl from-rose-800 to-cyan-500">
+                <span>
+                    <</span>Отзывы> <span>
+                </span>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 

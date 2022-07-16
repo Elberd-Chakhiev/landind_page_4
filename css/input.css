@@ -1,13 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply overflow-x-hidden;
+}
 .container {
-  @apply max-w-[1200px] mx-auto border border-red-500 px-3;
+  @apply max-w-[1200px] mx-auto border px-3 font-['Montserrat'];
 }
 .li--menu {
-  @apply md:pb-4 font-bold mr-4 relative 
-  before:absolute before:bottom-0 before:left-0 before:w-0 
-  before:border-b-2 before:border-white 
-  group-hover:before:w-full;
+  @apply md:pb-4 font-bold mr-4 relative;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-cyan-500;
+}
+
+/* .wrapp-transofrm {
+  transform: perspective(500px) rotateY(5deg) scaleX(1.6) scaleY(2);
+}
+.wrapper-effect:before {
+  @apply wrapp-transofrm;
+} */
+.text--gragient-title--theme {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.before--gradient--theme:before {
+  background: linear-gradient(221.35deg, #261d22 0%, rgba(25, 17, 22, 0) 55.98%);
 }

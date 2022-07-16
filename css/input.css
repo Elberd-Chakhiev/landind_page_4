@@ -40,8 +40,13 @@ svg {
   -webkit-background-clip: text;
   background-clip: text;
 }
-
+.swiper-pagination > span {
+  @apply bg-cyan-500;
+}
 .before--gradient--theme:before {
+  background: linear-gradient(221.35deg, #261d22 0%, rgba(25, 17, 22, 0) 55.98%);
+}
+.after--gradient--theme:after {
   background: linear-gradient(221.35deg, #261d22 0%, rgba(25, 17, 22, 0) 55.98%);
 }
 
@@ -55,4 +60,7 @@ svg {
   after:z-0 after:-bottom-6 after:left-0 after:w-full
   after:h-16 after:bg-main--theme
   after:skew-y-2;
+}
+.card--slide {
+  @apply py-7 bg-second--theme rounded-md select-none;
 }

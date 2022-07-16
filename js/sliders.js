@@ -7,3 +7,8 @@ const feedback_slider = new Swiper('.feedback-slider', {
         prevEl: '.swiper-button-prev',
     }
 })
+
+const cards_slider = new Swiper('.cards--sllider', {
+    effect: 'cards', 
+    grabCursor: true,
+})

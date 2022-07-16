@@ -9,6 +9,7 @@ for (let index = 0; index < triggers.length; index++) {
     })
 }
 
+
 // let cardNum = '1234567891234567'
 // let cardHiddenNum = []
 

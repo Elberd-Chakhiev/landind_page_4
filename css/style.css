@@ -790,6 +790,11 @@ video {
   font-weight: 700;
 }
 
+.li--menu::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
 @media (max-width: 539px) {
   .li--menu {
     padding-bottom: 1rem;

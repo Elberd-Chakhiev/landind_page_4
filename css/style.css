@@ -576,20 +576,20 @@ video {
   position: relative;
 }
 
-.left-0{
-  left: 0px;
+.right-0{
+  right: 0px;
 }
 
 .top-0{
   top: 0px;
 }
 
-.right-0{
-  right: 0px;
-}
-
 .top-2{
   top: 0.5rem;
+}
+
+.left-0{
+  left: 0px;
 }
 
 .bottom-2{
@@ -598,6 +598,14 @@ video {
 
 .top-1\/2{
   top: 50%;
+}
+
+.right-1\/2{
+  right: 50%;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .z-10{
@@ -616,9 +624,9 @@ video {
   order: 2;
 }
 
-.my-24{
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mx-auto{
@@ -626,9 +634,9 @@ video {
   margin-right: auto;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.my-24{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .mr-4{
@@ -647,16 +655,12 @@ video {
   margin-bottom: 2rem;
 }
 
-.-mb-8{
-  margin-bottom: -2rem;
+.mt-14{
+  margin-top: 3.5rem;
 }
 
 .mb-5{
   margin-bottom: 1.25rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
 }
 
 .mb-20{
@@ -665,6 +669,10 @@ video {
 
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.-mb-8{
+  margin-bottom: -2rem;
 }
 
 .block{
@@ -703,6 +711,10 @@ video {
   height: 700px;
 }
 
+.h-\[150px\]{
+  height: 150px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -731,10 +743,6 @@ video {
   max-width: 600px;
 }
 
-.max-w-\[180px\]{
-  max-width: 180px;
-}
-
 .max-w-\[80\%\]{
   max-width: 80%;
 }
@@ -745,6 +753,10 @@ video {
 
 .max-w-\[200px\]{
   max-width: 200px;
+}
+
+.max-w-\[180px\]{
+  max-width: 180px;
 }
 
 .-translate-y-1\/3{
@@ -767,6 +779,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-x-1\/2{
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .rotate-180{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -774,6 +791,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .grid-cols-3{
@@ -829,26 +850,30 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-main--theme{
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 17 22 / var(--tw-bg-opacity));
+}
+
 .bg-second--theme{
   --tw-bg-opacity: 1;
   background-color: rgb(13 5 10 / var(--tw-bg-opacity));
 }
 
-.bg-main--theme{
-  --tw-bg-opacity: 1;
-  background-color: rgb(25 17 22 / var(--tw-bg-opacity));
+.bg-\[url\(\'\/img\/bg\.webp\'\)\]{
+  background-image: url('/img/bg.webp');
 }
 
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-gradient-to-t{
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
 .bg-\[url\(\'\/img\/bg_2\.jpeg\'\)\]{
   background-image: url('/img/bg_2.jpeg');
+}
+
+.bg-gradient-to-t{
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .from-rose-800{
@@ -879,12 +904,12 @@ video {
   background-repeat: no-repeat;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-5{
   padding: 1.25rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-5{
@@ -895,11 +920,6 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-40{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
 }
 
 .py-20{
@@ -932,16 +952,26 @@ video {
   padding-bottom: 2.75rem;
 }
 
+.py-40{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-9{
   padding-bottom: 2.25rem;
 }
 
-.pt-10{
-  padding-top: 2.5rem;
-}
-
 .pb-12{
   padding-bottom: 3rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -970,6 +1000,11 @@ video {
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1003,12 +1038,12 @@ video {
   opacity: 0.2;
 }
 
-.opacity-50{
-  opacity: 0.5;
-}
-
 .opacity-60{
   opacity: 0.6;
+}
+
+.opacity-50{
+  opacity: 0.5;
 }
 
 .shadow-\[0_15px_60px_15px_rgba\(0\2c 0\2c 0\2c 0\.3\)\]{
@@ -1060,7 +1095,6 @@ svg{
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  border-width: 1px;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   font-family: 'Montserrat';
@@ -1087,13 +1121,6 @@ svg{
   background-color: rgb(6 182 212 / var(--tw-bg-opacity));
 }
 
-/* .wrapp-transofrm {
-  transform: perspective(500px) rotateY(5deg) scaleX(1.6) scaleY(2);
-}
-.wrapper-effect:before {
-  @apply wrapp-transofrm;
-} */
-
 .text--gragient-title--theme {
   color: transparent;
   -webkit-background-clip: text;
@@ -1110,6 +1137,10 @@ svg{
 }
 
 .after--gradient--theme:after {
+  background: linear-gradient(221.35deg, #261d22 0%, rgba(25, 17, 22, 0) 55.98%);
+}
+
+.just-gradient--theme {
   background: linear-gradient(221.35deg, #261d22 0%, rgba(25, 17, 22, 0) 55.98%);
 }
 
@@ -1147,6 +1178,26 @@ svg{
   content: var(--tw-content);
 }
 
+.sect--borders--theme_footer{
+  position: relative;
+  z-index: 20;
+}
+
+.sect--borders--theme_footer::before{
+  position: absolute;
+  top: -1.5rem;
+  left: 0px;
+  z-index: 0;
+  height: 4rem;
+  width: 100%;
+  --tw-skew-y: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 17 22 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .card--slide{
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1159,6 +1210,18 @@ svg{
   padding-bottom: 1.75rem;
 }
 
+.list--footer > li{
+  margin-bottom: 1.25rem;
+}
+
+.marker\:text-cyan-500 *::marker{
+  color: rgb(6 182 212 );
+}
+
+.marker\:text-cyan-500::marker{
+  color: rgb(6 182 212 );
+}
+
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -1169,14 +1232,14 @@ svg{
   top: 0px;
 }
 
-.before\:left-0::before{
-  content: var(--tw-content);
-  left: 0px;
-}
-
 .before\:left-1\/2::before{
   content: var(--tw-content);
   left: 50%;
+}
+
+.before\:left-0::before{
+  content: var(--tw-content);
+  left: 0px;
 }
 
 .before\:z-10::before{
@@ -1184,14 +1247,14 @@ svg{
   z-index: 10;
 }
 
-.before\:h-full::before{
-  content: var(--tw-content);
-  height: 100%;
-}
-
 .before\:h-80::before{
   content: var(--tw-content);
   height: 20rem;
+}
+
+.before\:h-full::before{
+  content: var(--tw-content);
+  height: 100%;
 }
 
 .before\:h-28::before{
@@ -1199,14 +1262,14 @@ svg{
   height: 7rem;
 }
 
-.before\:w-full::before{
-  content: var(--tw-content);
-  width: 100%;
-}
-
 .before\:w-80::before{
   content: var(--tw-content);
   width: 20rem;
+}
+
+.before\:w-full::before{
+  content: var(--tw-content);
+  width: 100%;
 }
 
 .before\:-translate-y-full::before{
@@ -1226,14 +1289,14 @@ svg{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.before\:bg-\[url\(\'\/img\/texture_sot\.png\'\)\]::before{
-  content: var(--tw-content);
-  background-image: url('/img/texture_sot.png');
-}
-
 .before\:bg-gradient-to-t::before{
   content: var(--tw-content);
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.before\:bg-\[url\(\'\/img\/texture_sot\.png\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('/img/texture_sot.png');
 }
 
 .before\:from-second--theme::before{
@@ -1283,6 +1346,16 @@ svg{
   right: 50%;
 }
 
+.after\:-bottom-20::after{
+  content: var(--tw-content);
+  bottom: -5rem;
+}
+
+.after\:right-0::after{
+  content: var(--tw-content);
+  right: 0px;
+}
+
 .after\:h-96::after{
   content: var(--tw-content);
   height: 24rem;
@@ -1321,6 +1394,16 @@ svg{
   content: var(--tw-content);
 }
 
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-main--theme:hover{
+  --tw-text-opacity: 1;
+  color: rgb(25 17 22 / var(--tw-text-opacity));
+}
+
 @media (max-width: 1025px){
   .xl\:mx-auto{
     margin-left: auto;
@@ -1341,6 +1424,10 @@ svg{
 }
 
 @media (max-width: 767px){
+  .lg\:order-2{
+    order: 2;
+  }
+
   .lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -1350,16 +1437,12 @@ svg{
     margin-bottom: 2rem;
   }
 
-  .lg\:hidden{
-    display: none;
+  .lg\:w-auto{
+    width: auto;
   }
 
   .lg\:w-\[320px\]{
     width: 320px;
-  }
-
-  .lg\:w-auto{
-    width: auto;
   }
 
   .lg\:max-w-full{

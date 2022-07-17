@@ -14,7 +14,7 @@ svg {
 }
 
 .container {
-  @apply max-w-[1200px] mx-auto border px-3 font-['Montserrat'];
+  @apply max-w-[1200px] mx-auto  px-3 font-['Montserrat'];
 }
 
 .text-shadow--theme {
@@ -29,12 +29,6 @@ svg {
   @apply bg-cyan-500;
 }
 
-/* .wrapp-transofrm {
-  transform: perspective(500px) rotateY(5deg) scaleX(1.6) scaleY(2);
-}
-.wrapper-effect:before {
-  @apply wrapp-transofrm;
-} */
 .text--gragient-title--theme {
   color: transparent;
   -webkit-background-clip: text;
@@ -50,6 +44,10 @@ svg {
   background: linear-gradient(221.35deg, #261d22 0%, rgba(25, 17, 22, 0) 55.98%);
 }
 
+.just-gradient--theme {
+  background: linear-gradient(221.35deg, #261d22 0%, rgba(25, 17, 22, 0) 55.98%);
+}
+
 .sect--borders--theme {
   @apply relative z-20 before:absolute
   before:z-0 before:-top-6 before:left-0 before:w-full
@@ -61,6 +59,16 @@ svg {
   after:h-16 after:bg-main--theme
   after:skew-y-2;
 }
+.sect--borders--theme_footer {
+  @apply relative z-20 before:absolute
+  before:z-0 before:-top-6 before:left-0 before:w-full
+  before:h-16 before:bg-main--theme
+  before:skew-y-2
+  before:content-[''];
+}
 .card--slide {
   @apply py-7 bg-second--theme rounded-md select-none;
+}
+.list--footer > li {
+  @apply mb-5;
 }
